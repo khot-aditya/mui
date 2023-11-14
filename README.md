@@ -47,7 +47,16 @@
 
 2. Open your browser and go to [http://localhost:5173](http://localhost:5173) to access the MUI Theme Generator.
 
-<h2 >Contributing</h2>
+<h2>Todo:</h2>
+
+- [x] Add Monaco code editor
+   - [ ] Improve code editor
+- [ ] Components to preview panel    
+- [ ] Support for saving and submitting theme     
+- [ ] Import themes dynamically
+- [ ] Community themes support
+
+<h2>Contributing</h2>
 
 If you'd like to contribute to MUI Theme Generator, please follow the guidelines in [CONTRIBUTING.md](CONTRIBUTING.md).
 
