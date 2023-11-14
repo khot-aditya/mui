@@ -3,6 +3,7 @@ import { ThemeProvider } from '@mui/material';
 import { themeCreator } from './base';
 
 export const ThemeContext = React.createContext(
+  // @ts-ignore
   (themeName: string): void => { }
 );
 

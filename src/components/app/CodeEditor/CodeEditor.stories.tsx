@@ -7,6 +7,6 @@ export default {
   component: CodeEditor,
 } as Meta
 
-const Template: StoryFn<typeof CodeEditor> = (args) => <CodeEditor />
+const Template: StoryFn<typeof CodeEditor> = () => <CodeEditor />
 
 export const Default = Template.bind({})

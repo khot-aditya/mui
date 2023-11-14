@@ -7,6 +7,6 @@ export default {
   component: Logo,
 } as Meta
 
-const Template: StoryFn<typeof Logo> = (args) => <Logo {...args} />
+const Template: StoryFn<typeof Logo> = () => <Logo />
 
 export const Default = Template.bind({})

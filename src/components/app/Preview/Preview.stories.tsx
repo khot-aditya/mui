@@ -7,6 +7,6 @@ export default {
   component: Preview,
 } as Meta
 
-const Template: StoryFn<typeof Preview> = (args) => <Preview />
+const Template: StoryFn<typeof Preview> = () => <Preview />
 
 export const Default = Template.bind({})
