@@ -11,7 +11,7 @@ interface ThemeProviderWrapperProps {
 }
 
 const ThemeProviderWrapper: React.FC<ThemeProviderWrapperProps> = ({ children }) => {
-  const curThemeName = localStorage.getItem('appTheme') || 'PureLightTheme';
+  const curThemeName = localStorage.getItem('appTheme') || 'LightTheme';
   const [themeName, _setThemeName] = useState(curThemeName);
   const theme = themeCreator(themeName);
 

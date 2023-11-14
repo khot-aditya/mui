@@ -1,36 +1,40 @@
-import { Box, Button, Checkbox } from "@mui/material"
+import CodeEditor from "./components/app/CodeEditor";
+import { EditorContainer } from "./styles";
+import { Panel, PanelGroup, PanelResizeHandle } from "react-resizable-panels";
+import Preview from "./components/app/Preview";
+import { Box } from "@mui/material";
+import Header from "./components/app/Header";
 
 function App() {
-  const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
-
 
   return (
-    <Box display={'flex'} flexDirection={"column"} alignItems={'start'} gap={1}>
-      <Button variant="text">Text</Button>
-      <Button variant="contained">Contained</Button>
-      <Button variant="outlined">Outlined</Button>
-
-      <Button>Primary</Button>
-      <Button disabled>Disabled</Button>
-      <Button href="#text-buttons">Link</Button>
-
-      <Button variant="contained">Contained</Button>
-      <Button variant="contained" disabled>
-        Disabled
-      </Button>
-      <Button variant="contained" href="#contained-buttons">
-        Link
-      </Button>
-
-      <Button variant="contained" disableElevation>
-        Disable elevation
-      </Button>
-
-      <Checkbox {...label} defaultChecked />
-      <Checkbox {...label} />
-      <Checkbox {...label} disabled />
-      <Checkbox {...label} disabled checked />
-
+    <Box >
+      <PanelGroup autoSaveId="root-layout" direction="horizontal">
+        <Panel
+          defaultSize={40}
+          minSize={30}
+          maxSize={60}
+        >
+          <EditorContainer>
+            <Header />
+            <CodeEditor />
+          </EditorContainer>
+        </Panel>
+        <PanelResizeHandle style={{
+          width: 10,
+          background: '#ccc',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center'
+        }}>
+          |
+        </PanelResizeHandle>
+        <Panel
+          defaultSize={20} minSize={20}
+        >
+          <Preview />
+        </Panel>
+      </PanelGroup>
     </Box>
   )
 }
