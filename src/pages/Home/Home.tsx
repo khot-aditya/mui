@@ -2,7 +2,7 @@ import { Box, Button, Typography } from "@mui/material"
 import { Container } from "./styles"
 import { useNavigate } from "react-router-dom"
 import { routes } from "../../constants/Constants";
-
+import BackgroundImage from '../../assets/mesh-gradient.png'
 
 const Home = () => {
     const navigate = useNavigate();
@@ -13,6 +13,7 @@ const Home = () => {
 
     return (
         <Container>
+            <img src={BackgroundImage} alt="background gradient"/>
             <Box
                 width={'100%'}
                 maxWidth={'800px'}
