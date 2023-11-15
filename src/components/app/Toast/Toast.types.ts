@@ -1,3 +1,3 @@
 export interface IToast {
-    message: string;
+    message?: string;
 }
