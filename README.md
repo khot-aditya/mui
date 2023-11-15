@@ -49,12 +49,14 @@
 
 <h2>Todo:</h2>
 
+- [ ] Create landing page
 - [x] Add Monaco code editor
    - [ ] Improve code editor
 - [ ] Components to preview panel    
 - [ ] Support for saving and submitting theme     
 - [ ] Import themes dynamically
 - [ ] Community themes support
+- [ ] Add support for Localization
 
 <h2>Contributing</h2>
 
