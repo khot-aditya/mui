@@ -16,37 +16,6 @@
 
 - **Submission:** Users can submit their themes for community use, fostering collaboration and a diverse range of themes for the MUI library.
 
-<h2 >Getting Started</h2>
-
-### Installation
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/khot-aditya/mui-theme-generator.git
-   ```
-
-2. Navigate to the project directory:
-
-   ```bash
-   cd mui-theme-generator
-   ```
-
-3. Install dependencies:
-   ```bash
-   pnpm install
-   ```
-
-<h3 >Usage</h3>
-
-1. Start the development server:
-
-   ```bash
-   pnpm run dev
-   ```
-
-2. Open your browser and go to [http://localhost:5173](http://localhost:5173) to access the MUI Theme Generator.
-
 <h2>Todo:</h2>
 
 - [ ] Create landing page
