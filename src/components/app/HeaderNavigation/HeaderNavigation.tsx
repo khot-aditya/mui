@@ -1,7 +1,8 @@
-import { Box } from '@mui/material'
+import { Button } from '@mui/material'
 import { MenuContainer } from './styles'
 import { useNavigate } from 'react-router-dom'
 import { routes } from '../../../constants/Constants';
+import For from '../For';
 
 const HeaderNavigation = () => {
 
@@ -32,15 +33,17 @@ const HeaderNavigation = () => {
 
     return (
         <MenuContainer>
-            {
-                menuArray.map(item => (
-                    <Box
-                        onClick={() => handleNavigate(item.url)}
-                        key={item.url}>
-                        {item.label}
-                    </Box>
-                ))
-            }
+            <For each={menuArray}>
+                {
+                    (item) => (
+                        <Button
+                            onClick={() => handleNavigate(item.url)}
+                            key={item.url}>
+                            {item.label}
+                        </Button>
+                    )
+                }
+            </For>
         </MenuContainer>
     )
 }
