@@ -28,16 +28,16 @@ const route: RouteObject[] = [
                 element: <Builder />,
                 children: [
                     {
+                        path: routes.builder.community,
+                        element: <Community />
+                    },
+                    {
                         path: routes.builder.editor,
                         element: <Editor />
                     },
                     {
                         path: routes.builder.colors,
                         element: <Colors />
-                    },
-                    {
-                        path: routes.builder.community,
-                        element: <Community />
                     },
                     {
                         path: routes.builder.collection,

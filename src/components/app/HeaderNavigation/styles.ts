@@ -1,4 +1,8 @@
-import { Box } from "@mui/material";
+import {
+    Box,
+    List as MUIList,
+    ListItemButton as MUIListItemButton
+} from "@mui/material";
 import styled from "styled-components";
 
 export const MenuContainer = styled(Box)`
@@ -11,3 +15,23 @@ export const MenuContainer = styled(Box)`
     border-bottom: 1px solid lightgray;
 `
 
+export const List = styled(MUIList)
+    (({ theme }) => ({
+        display: 'flex',
+        gap: 5,
+    }));
+
+
+export const ListItemButton = styled(MUIListItemButton)
+    (({ theme }) => ({
+        "&.MuiListItemButton-root": {
+            fontWeight: 500,
+            borderRadius: 20
+        },
+        "&.MuiListItemButton-root:hover": {
+            // background: 'red'
+        },
+        "&.Mui-selected.MuiListItemButton-root:hover": {
+            // background: 'pri'
+        }
+    }))

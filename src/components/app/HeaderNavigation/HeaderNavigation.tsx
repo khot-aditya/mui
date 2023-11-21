@@ -1,14 +1,19 @@
-import { Button } from '@mui/material'
-import { MenuContainer } from './styles'
-import { useNavigate } from 'react-router-dom'
+import { ListItemText } from '@mui/material'
+import { List, ListItemButton, MenuContainer } from './styles'
+import { useLocation, useNavigate, useParams } from 'react-router-dom'
 import { routes } from '../../../constants/Constants';
 import For from '../For';
 
 const HeaderNavigation = () => {
 
     const navigation = useNavigate();
+    const location = useLocation();
 
     const menuArray = [
+        {
+            label: 'Themes',
+            url: routes.builder.community
+        },
         {
             label: 'Editor',
             url: routes.builder.editor
@@ -16,10 +21,6 @@ const HeaderNavigation = () => {
         {
             label: 'Colors',
             url: routes.builder.colors
-        },
-        {
-            label: 'Community Themes',
-            url: routes.builder.community
         },
         {
             label: 'Collection',
@@ -33,17 +34,20 @@ const HeaderNavigation = () => {
 
     return (
         <MenuContainer>
-            <For each={menuArray}>
-                {
-                    (item) => (
-                        <Button
-                            onClick={() => handleNavigate(item.url)}
-                            key={item.url}>
-                            {item.label}
-                        </Button>
-                    )
-                }
-            </For>
+            <List >
+                <For each={menuArray}>
+                    {
+                        (item) => (
+                            <ListItemButton
+                                selected={location.pathname === item.url}
+                                onClick={() => handleNavigate(item.url)}
+                            >
+                                {item.label}
+                            </ListItemButton>
+                        )
+                    }
+                </For>
+            </List>
         </MenuContainer>
     )
 }

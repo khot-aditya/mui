@@ -16,9 +16,9 @@ export const routes = {
     },
     builder: {
         index: `${BASE_URL}/builder`,
+        community: `${BASE_URL}/builder`,
         editor: `${BASE_URL}/builder/editor`,
         colors: `${BASE_URL}/builder/colors`,
-        community: `${BASE_URL}/builder/community-themes`,
         collection: `${BASE_URL}/builder/collection`,
     }
 }
