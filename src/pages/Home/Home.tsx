@@ -8,7 +8,7 @@ const Home = () => {
     const navigate = useNavigate();
 
     const handleGetStartedClick = () => {
-        navigate(routes.generator.index)
+        navigate(routes.builder.index)
     }
 
     return (

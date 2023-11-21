@@ -14,7 +14,11 @@ export const routes = {
         },
         notFound: `*`
     },
-    generator: {
-        index: `${BASE_URL}/generator`
+    builder: {
+        index: `${BASE_URL}/builder`,
+        editor: `${BASE_URL}/builder/editor`,
+        colors: `${BASE_URL}/builder/colors`,
+        community: `${BASE_URL}/builder/community-themes`,
+        collection: `${BASE_URL}/builder/collection`,
     }
 }

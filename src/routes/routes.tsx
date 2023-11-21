@@ -1,7 +1,7 @@
 import { RouteObject, useRoutes } from "react-router-dom";
 import RootLayout from "./layouts/RootLayout";
 import Home from "../pages/Home";
-import Editor from "../pages/Editor";
+import Builder from "../pages/Builder";
 import { routes } from "../constants/Constants";
 import Error400 from "../pages/Error400";
 import Error401 from "../pages/Error401";
@@ -9,6 +9,10 @@ import Error403 from "../pages/Error403";
 import Error404 from "../pages/Error404";
 import Error500 from "../pages/Error500";
 import NotFoundPage from "../pages/NotFoundPage";
+import Collection from "../pages/Collection";
+import Editor from "../pages/Editor";
+import Colors from "../pages/Colors";
+import Community from "../pages/Community";
 
 const route: RouteObject[] = [
     {
@@ -20,8 +24,26 @@ const route: RouteObject[] = [
                 element: <Home />,
             },
             {
-                path: routes.generator.index,
-                element: <Editor />,
+                path: routes.builder.index,
+                element: <Builder />,
+                children: [
+                    {
+                        path: routes.builder.editor,
+                        element: <Editor />
+                    },
+                    {
+                        path: routes.builder.colors,
+                        element: <Colors />
+                    },
+                    {
+                        path: routes.builder.community,
+                        element: <Community />
+                    },
+                    {
+                        path: routes.builder.collection,
+                        element: <Collection />
+                    }
+                ]
             },
         ],
     },
