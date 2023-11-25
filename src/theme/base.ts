@@ -246,6 +246,7 @@ declare module "@mui/material/styles" {
       boxShadow: React.CSSProperties["color"];
       textColor: React.CSSProperties["color"];
     };
+   
   }
 }
 

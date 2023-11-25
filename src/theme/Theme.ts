@@ -1133,24 +1133,23 @@ export const theme: ThemeOptions = {
     "borderRadius": 10,
   },
   "typography": {
-    "fontFamily":
-      '"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"',
+    "fontFamily": 'Noto Sans, sans-serif',
     "h1": {
-      "fontWeight": 700,
-      "fontSize": 35,
+      "fontWeight": 500,
+      "fontSize": 40,
     },
     "h2": {
-      "fontWeight": 700,
+      "fontWeight": 500,
       "fontSize": 30,
     },
     "h3": {
-      "fontWeight": 700,
+      "fontWeight": 500,
       "fontSize": 25,
       "lineHeight": 1.4,
       "color": colors.alpha.black[100],
     },
     "h4": {
-      "fontWeight": 700,
+      "fontWeight": 500,
       "fontSize": 16,
     },
     "h5": {

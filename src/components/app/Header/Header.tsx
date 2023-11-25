@@ -4,7 +4,9 @@ import HeaderNavigation from '../HeaderNavigation'
 
 const Header = () => {
     return (
-        <Box display={'flex'}>
+        <Box display={'flex'} sx={{
+            borderBottom: "1px solid lightgray"
+        }}>
             <Logo />
             <HeaderNavigation />
         </Box>
