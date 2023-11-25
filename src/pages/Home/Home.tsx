@@ -1,7 +1,7 @@
 import { Box, Button, Typography } from "@mui/material"
 import { Container } from "./styles"
 import { useNavigate } from "react-router-dom"
-import { routes } from "../../constants/Constants";
+import { routes } from "../../constants/RoutesConstants";
 import BackgroundImage from '../../assets/mesh-gradient.png'
 
 const Home = () => {

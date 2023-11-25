@@ -2,7 +2,7 @@ import { RouteObject, useRoutes } from "react-router-dom";
 import RootLayout from "./layouts/RootLayout";
 import Home from "../pages/Home";
 import Builder from "../pages/Builder";
-import { routes } from "../constants/Constants";
+import { routes } from "../constants/RoutesConstants";
 import Error400 from "../pages/Error400";
 import Error401 from "../pages/Error401";
 import Error403 from "../pages/Error403";
