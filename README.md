@@ -1,5 +1,3 @@
-# MUI Theme Generator
-
 <img src="./res/index-page.png"/>
 
 <h2 >Overview</h2>
