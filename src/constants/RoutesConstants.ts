@@ -1,5 +1,5 @@
 
-export const BASE_URL = '/mui-theme-generator'
+export const BASE_URL = ''
 
 export const routes = {
     root: {
