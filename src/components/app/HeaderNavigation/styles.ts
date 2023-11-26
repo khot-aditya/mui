@@ -13,14 +13,14 @@ export const MenuContainer = styled(Box)`
 `
 
 export const List = styled(MUIList)
-    (({ theme }) => ({
+    (() => ({
         display: 'flex',
         gap: 5,
     }));
 
 
 export const ListItemButton = styled(MUIListItemButton)
-    (({ theme }) => ({
+    (() => ({
         "&.MuiListItemButton-root": {
             fontWeight: 500,
             borderRadius: 20

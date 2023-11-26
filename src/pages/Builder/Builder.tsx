@@ -7,7 +7,7 @@ import controller from "./Builder.controller"
 
 const Builder = () => {
 
-    const control = controller()
+    controller()
 
     return (
         <Box>

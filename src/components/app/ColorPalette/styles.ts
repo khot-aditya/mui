@@ -1,6 +1,6 @@
 import { Box, styled } from "@mui/material";
 
-export const PaletteContainer = styled(Box)(({ theme }) => ({
+export const PaletteContainer = styled(Box)(() => ({
     display: 'flex',
     gap: '6px',
 

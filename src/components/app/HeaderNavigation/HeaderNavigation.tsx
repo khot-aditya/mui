@@ -1,6 +1,5 @@
-import { ListItemText } from '@mui/material'
 import { List, ListItemButton, MenuContainer } from './styles'
-import { useLocation, useNavigate, useParams } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 import { routes } from '../../../constants/RoutesConstants';
 import For from '../For';
 
