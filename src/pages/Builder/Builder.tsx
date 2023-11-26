@@ -7,7 +7,7 @@ import controller from "./Builder.controller"
 
 const Builder = () => {
 
-    // const control = controller()
+    const control = controller()
 
     return (
         <Box>
@@ -17,8 +17,11 @@ const Builder = () => {
                     minSize={30}
                     maxSize={60}
                 >
-                    <Box height={"100vh"}>
-                        <Header />
+                    <Header />
+                    <Box
+                        height={"92vh"}
+                        overflow={"auto"}
+                    >
                         <Outlet />
                     </Box>
                 </Panel>

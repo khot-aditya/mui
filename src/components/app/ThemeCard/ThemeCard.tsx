@@ -1,7 +1,31 @@
-import { Box, Button, Typography } from '@mui/material'
+import { Box, Button, Tooltip, Typography } from '@mui/material'
+import { FC } from 'react'
 import { Card } from './styles.ts'
 import ColorPalette from '../ColorPalette/index.ts'
-import RightArrowIcon from '../../../assets/icons/arrow-right.svg?react'
+import BookmarkOutlinedIcon from '../../../assets/icons/bookmark-outline.svg?react'
+import BookmarkFilledIcon from '../../../assets/icons/bookmark-filled.svg?react'
+
+const BookmarkToggle: FC<{
+    isBookmarked: boolean
+}> = ({ isBookmarked }) => {
+
+    const Icon = isBookmarked ? BookmarkFilledIcon : BookmarkOutlinedIcon
+
+    return (
+        <Tooltip
+            title="Bookmark"
+            placement="top"
+        >
+            <Box>
+                <Icon style={{
+                    width: '20px',
+                    height: '20px',
+                    cursor: 'pointer'
+                }} />
+            </Box>
+        </Tooltip>
+    )
+}
 
 const ThemeCard = () => {
     return (
@@ -21,13 +45,16 @@ const ThemeCard = () => {
                 flexDirection={'column'}
                 display={"flex"}>
                 <Typography
-                    variant="h6"
+                    variant="h4"
                     fontWeight={600}
                 >
                     This is a theme name
                 </Typography>
 
-                <Box>
+                <Box
+                    display={'flex'}
+                    justifyContent={'space-between'}
+                >
                     <ColorPalette
                         colors={
                             [
@@ -38,17 +65,20 @@ const ThemeCard = () => {
                             ]
                         }
                     />
+
+                    <BookmarkToggle isBookmarked={false} />
                 </Box>
 
                 <Box
                     display={'flex'}
-                    gap={0.5}
+                    gap={0.8}
                 >
                     <Button
                         variant='outlined'
-                        size='small'
+                        fullWidth
                         sx={{
-                            borderRadius: '5px',
+                            maxWidth: '35%',
+                            borderRadius: '999px',
                         }}
                     >
                         Edit
@@ -56,17 +86,10 @@ const ThemeCard = () => {
 
                     <Button
                         variant='contained'
-                        size='small'
                         fullWidth
                         sx={{
-                            borderRadius: '5px',
+                            borderRadius: '999px',
                         }}
-                        endIcon={
-                            <RightArrowIcon style={{
-                                width: '20px',
-                                height: '20px'
-                            }} />
-                        }
                     >
                         Preview
                     </Button>

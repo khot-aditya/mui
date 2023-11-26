@@ -5,7 +5,7 @@ import ThemeCard from "../../components/app/ThemeCard"
 const Community = () => {
 
     return (
-        <>
+        <Box >
             <HeaderContainer>
 
                 <Typography variant="h1" gutterBottom>
@@ -20,8 +20,12 @@ const Community = () => {
                 <ThemeCard />
                 <ThemeCard />
                 <ThemeCard />
+                <ThemeCard />
+                <ThemeCard />
+                <ThemeCard />
+                <ThemeCard />
             </Container>
-        </>
+        </Box>
     )
 }
 
