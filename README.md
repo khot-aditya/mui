@@ -1,7 +1,8 @@
 # MUI Theme Generator
 
-<h2 >Overview</h2>
+<img src="./res/index-page.png"/>
 
+<h2 >Overview</h2>
 <p >
   MUI Theme Generator is a powerful tool that allows users to create, edit, and visualize themes for the Material-UI (MUI) component library. With real-time preview capabilities and a user-friendly interface, designing and customizing MUI themes becomes a seamless experience.
 </p>
@@ -20,9 +21,9 @@
 
 - [ ] Create landing page
 - [x] Add Monaco code editor
-   - [ ] Improve code editor
-- [ ] Components to preview panel    
-- [ ] Support for saving and submitting theme     
+  - [ ] Improve code editor
+- [ ] Components to preview panel
+- [ ] Support for saving and submitting theme
 - [ ] Import themes dynamically
 - [ ] Community themes support
 - [ ] Add support for Localization
