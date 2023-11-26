@@ -5,5 +5,5 @@ import svgr from "vite-plugin-svgr";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), svgr()],
-  base: '/mui-theme-generator/', // Set the base path for your project
+  base: '/', // Set the base path for your project
 })
