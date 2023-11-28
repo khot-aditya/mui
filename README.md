@@ -24,6 +24,8 @@
 - [ ] Support for saving and submitting theme
 - [ ] Import themes dynamically
 - [ ] Community themes support
+  - [ ] Add theme cards
+  - [ ] Support for searching themes 
 - [ ] Add support for Localization
 
 <h2>Contributing</h2>
