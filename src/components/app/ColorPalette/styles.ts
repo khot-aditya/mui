@@ -7,7 +7,7 @@ export const PaletteContainer = styled(Box)(() => ({
     '& div': {
         width: '20px',
         height: '20px',
-        borderRadius: '5px',
+        borderRadius: '99px',
         cursor: 'pointer',
         transition: 'all 0.2s ease-in-out',
         '&:hover': {

@@ -1,6 +1,6 @@
 import { Box, Button, Tooltip, Typography } from '@mui/material'
 import { FC } from 'react'
-import { Card } from './styles.ts'
+import { BookmarkBox, Card } from './styles.ts'
 import ColorPalette from '../ColorPalette/index.ts'
 import BookmarkOutlinedIcon from '../../../assets/icons/bookmark-outline.svg?react'
 import BookmarkFilledIcon from '../../../assets/icons/bookmark-filled.svg?react'
@@ -13,16 +13,16 @@ const BookmarkToggle: FC<{
 
     return (
         <Tooltip
-            title="Bookmark"
+            title={isBookmarked ? 'Remove' : 'Bookmark'}
             placement="top"
         >
-            <Box>
+            <BookmarkBox isBookmarked={isBookmarked} >
                 <Icon style={{
                     width: '20px',
                     height: '20px',
                     cursor: 'pointer'
                 }} />
-            </Box>
+            </BookmarkBox>
         </Tooltip>
     )
 }
@@ -41,7 +41,7 @@ const ThemeCard = () => {
             </Box>
             <Box
                 p={2}
-                gap={1.1}
+                gap={0.8}
                 flexDirection={'column'}
                 display={"flex"}>
                 <Typography
@@ -66,12 +66,18 @@ const ThemeCard = () => {
                         }
                     />
 
-                    <BookmarkToggle isBookmarked={false} />
+                    <BookmarkToggle isBookmarked={(function () {
+
+                        // random boolean
+                        const randomBoolean = Math.random() >= 0.5
+
+                        return randomBoolean
+                    }())} />
                 </Box>
 
                 <Box
                     display={'flex'}
-                    gap={0.8}
+                    gap={0.5}
                 >
                     <Button
                         variant='outlined'

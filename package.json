@@ -10,7 +10,12 @@
     "git:merge": "git checkout main && git pull origin development && git push origin main && git checkout development",
     "plop": "plop",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build:storybook": "storybook build"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
@@ -47,6 +52,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
     "eslint-plugin-storybook": "^0.6.15",
+    "husky": "^8.0.3",
     "storybook": "7.5.2",
     "typescript": "^5.0.2",
     "vite": "^4.4.5"
