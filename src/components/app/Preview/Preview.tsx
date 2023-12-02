@@ -6,7 +6,6 @@ import { useContext } from 'react'
 const Preview = () => {
     const { theme } = useContext(ThemeContext);
     const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
-    console.log(theme)
     return (
         <>
             {theme && (

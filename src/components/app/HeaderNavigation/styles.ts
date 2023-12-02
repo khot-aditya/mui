@@ -12,23 +12,21 @@ export const MenuContainer = styled(Box)`
     gap: 20px;
 `
 
-export const List = styled(MUIList)
-    (() => ({
-        display: 'flex',
-        gap: 5,
-    }));
+export const List = styled(MUIList)(() => ({
+    display: 'flex',
+    gap: 5,
+}));
 
 
-export const ListItemButton = styled(MUIListItemButton)
-    (() => ({
-        "&.MuiListItemButton-root": {
-            fontWeight: 500,
-            borderRadius: 20
-        },
-        "&.MuiListItemButton-root:hover": {
-            // background: 'red'
-        },
-        "&.Mui-selected.MuiListItemButton-root:hover": {
-            // background: 'pri'
-        }
-    }))
+export const ListItemButton = styled(MUIListItemButton)(() => ({
+    "&.MuiListItemButton-root": {
+        fontWeight: 500,
+        borderRadius: 20
+    },
+    "&.MuiListItemButton-root:hover": {
+        // background: 'red'
+    },
+    "&.Mui-selected.MuiListItemButton-root:hover": {
+        // background: 'pri'
+    }
+}))

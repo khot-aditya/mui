@@ -3,11 +3,10 @@ import { Panel, PanelGroup, PanelResizeHandle } from "react-resizable-panels"
 import Header from "../../components/app/Header"
 import Preview from "../../components/app/Preview"
 import { Outlet } from "react-router-dom"
-import controller from "./Builder.controller"
+import { useLightTheme } from "../../template/LightTheme"
 
 const Builder = () => {
-
-    controller()
+    useLightTheme();
 
     return (
         <Box>

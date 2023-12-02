@@ -1,7 +1,4 @@
 import CodeEditor from "@monaco-editor/react";
-import {
-  theme as _theme,
-} from '../../../theme/Theme'
 import { useLightTheme } from "../../../template/LightTheme";
 import { ThemeOptions } from "@mui/material";
 

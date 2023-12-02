@@ -11,13 +11,12 @@ export const Card = styled(Box)(({ theme }) => ({
     boxShadow: "3px 5px 10px rgba(0, 0, 0, 0.04)",
 }));
 
-export const BookmarkBox = styled(Box)
-    <BookmarkBoxProps>(({ isBookmarked }) => ({
-        "& svg": {
-            fill: '#747474',
-            transition: 'fill 0.2s ease-in-out',
-        },
-        "&:hover svg": {
-            fill: isBookmarked ? '#ff2828' : '#000',
-        }
-    }));
+export const BookmarkBox = styled(Box)<BookmarkBoxProps>(({ isBookmarked }) => ({
+    "& svg": {
+        fill: '#747474',
+        transition: 'fill 0.2s ease-in-out',
+    },
+    "&:hover svg": {
+        fill: isBookmarked ? '#ff2828' : '#000',
+    }
+}));
