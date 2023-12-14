@@ -17,16 +17,17 @@
 
 <h2>Todo:</h2>
 
-- [ ] Create landing page
+- [ ] Create a landing page
 - [x] Add Monaco code editor
   - [ ] Improve code editor
 - [ ] Components to preview panel
-- [ ] Support for saving and submitting theme
+- [ ] Support for saving and submitting the theme
 - [ ] Import themes dynamically
 - [ ] Community themes support
   - [ ] Add theme cards
   - [ ] Support for searching themes 
 - [ ] Add support for Localization
+- [ ] Use Mazzard font
 
 <h2>Contributing</h2>
 
