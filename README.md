@@ -1,4 +1,5 @@
-<img src="./res/index-page.png"/>
+# MUI Theme Generator (WIP)
+## <img src="./res/index-page.png"/>
 
 <h2 >Overview</h2>
 <p >
